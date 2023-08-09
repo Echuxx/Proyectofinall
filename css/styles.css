@@ -1,0 +1,187 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Lato:wght@400;700&family=Lilita+One&display=swap');
+
+@keyframes escalar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+    
+    
+}
+
+
+
+#header {
+position: fixed;
+        
+    
+    
+}
+
+/* header */
+.flex-container {
+
+    display:flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2498f7e3;
+    
+  }
+  
+  .menu ul {
+  padding: 0;
+    
+  }
+  
+  .menu ul li {
+    padding-top: 25%;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2498f7e3;
+  }
+  
+  .menu ul li:hover > ul {
+    display: inherit;
+  }
+  
+  .menu ul ul li {
+    width: 100%;
+  }
+  
+  .menu ul ul a {
+    padding: 10px 20px;
+  }
+  
+  .menu ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+
+  /* primer texto */
+  .contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 120px; 
+  }
+  
+  .contenedor img {
+    max-width: 50%;
+  }
+  
+  .contenido {
+    flex: 1;
+    padding: 30px; /* Espacio entre el contenido y la imagen */
+  }
+  
+  .contenido h2 {
+    margin: 10px; /* Espacio inferior para el título */
+  }
+
+  /* Boton para descargar el cv */
+
+
+.btn-cv {
+    
+    font-size: 20px;
+     
+     
+     
+    color: #fbfbfb; 
+    text-decoration:double; 
+    
+    
+}
+
+#hablemos {
+    display: flexbox;
+    line-height: 1.2;
+    background-color: #2498f78e;
+    padding: 6px;
+    text-align: center;
+    margin: 60px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-family: lato;
+        
+}
+
+.menu2 {
+    
+    display: flex;
+    justify-content: center;
+   
+    
+} 
+
+.boton {
+    padding-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+  }
+  
+  .animacion {
+    animation: escalar 1s infinite; /* Aplicar la animación */
+  }
+
+
+  #titulo-footer {
+    line-height: 90px;
+    color: #fbfbfb;
+    text-align: center;
+}
+
+#footer {
+    height: 90px;
+    background-color: #2498f78e;
+
+}
+
+.logos {
+    display:flexbox;
+    text-align: center;
+  }
+  
+  .logos img {
+    max-width: 33.33%; /* Divide el espacio en partes iguales para las imágenes */
+  }
+  
