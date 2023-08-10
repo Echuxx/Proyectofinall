@@ -1,0 +1,5 @@
+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
+
+git config --global user.name Echuxx
+git config --global user.email jesusaah87@gmail.com
+git config --global user.password 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
