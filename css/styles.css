@@ -50,58 +50,94 @@ position: fixed;
 }
 
 /* header */
-.flex-container {
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    display:flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #2498f7e3;
-    
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #2498f7e3;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-item img {
+  height: auto;
+  max-height: 80px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul ul {
+  display: none;
+  position: absolute;
+  background-color: #2498f7e3;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul li {
+  width: 100%;
+}
+
+.menu ul ul a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .menu ul {
-  padding: 0%;
-    
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
   }
-  
+
   .menu ul li {
-    padding-top: 25%;
-    display: inline-block;
-    position: relative;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  
-  .menu ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
+
   .menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #2498f7e3;
+    position: static;
+    display: block;
   }
-  
-  .menu ul li:hover > ul {
-    display: inherit;
+
+  .logos img {
+    max-width: 100%;
   }
-  
-  .menu ul ul li {
-    width: 100%;
-  }
-  
-  .menu ul ul a {
-    padding: 10px 20px;
-  }
-  
-  .menu ul ul ul {
-    left: 100%;
-    top: 0;
-  }
+}
 
   /* primer texto */
   
@@ -197,4 +233,5 @@ position: fixed;
   .logos img {
     max-width: 33.33%; /* Divide el espacio en partes iguales para las imágenes */
   }
+  
   
