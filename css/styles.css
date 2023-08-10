@@ -70,75 +70,43 @@ body {
   align-items: center;
 }
 
-.flex-container {
-  display: flex;
-  align-items: center;
-}
-
-.flex-item img {
-  height: auto;
-  max-height: 80px;
-}
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  margin-right: 20px;
-}
-
-.menu ul li {
-  margin-right: 20px;
-}
-
-.menu ul ul {
+/* Ajusta estos estilos según tus necesidades */
+.menu-icon {
   display: none;
-  position: absolute;
-  background-color: #2498f7e3;
+  cursor: pointer;
 }
 
-.menu ul li:hover > ul {
-  display: block;
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
 }
 
-.menu ul ul li {
-  width: 100%;
-}
-
-.menu ul ul a {
-  padding: 10px 20px;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-}
-
-/* Media query para dispositivos móviles */
+/* Media query para mostrar el icono del menú en dispositivos móviles */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-  }
-
-  .menu ul li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .menu ul ul {
-    position: static;
+  .menu-icon {
     display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #2498f7e3;
+    width: 100%;
   }
 
-  .logos img {
-    max-width: 100%;
+  .menu ul.active {
+    display: flex;
   }
 }
-
   /* primer texto */
   
   #fotomia {
