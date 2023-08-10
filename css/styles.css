@@ -25,6 +25,14 @@
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
+
+/* Ejemplo de media query para dispositivos móviles */
+@media (max-width: 768px) {
+  
+  
+}
+
+
 main {
     max-width: 1200px;
     margin: auto;
@@ -53,7 +61,7 @@ position: fixed;
   }
   
   .menu ul {
-  padding: 0;
+  padding: 0%;
     
   }
   
@@ -96,6 +104,11 @@ position: fixed;
   }
 
   /* primer texto */
+  
+  #fotomia {
+    border-radius: 50%;
+  }
+  
   .contenedor {
     display: flex;
     align-items: center;
