@@ -364,7 +364,7 @@ body {
 }
 
 .dark-mode .logos a img {
-  filter: invert(1); /* Invierte los colores de la imagen */
+  filter: invert(1); 
 }
 
 
