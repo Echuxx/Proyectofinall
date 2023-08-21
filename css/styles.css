@@ -189,7 +189,8 @@ body {
 
 #footer {
     height: 90px;
-    background-color: #2498f78e;
+    
+    background-image: url("https://3.bp.blogspot.com/-ZGO_QXvzwao/VUjvs_4UCcI/AAAAAAAATqc/elKeY6bPx-8/s1600/ZenBG%2B(1).png");
 
 }
 
@@ -231,12 +232,12 @@ body {
   
   /* Estilo del boton cuando se pasa el mouse por encima*/
   label:hover{
-    background: grey;
+    background:transparent;
   }
   
   /* Estilo del boton cuando el menú está expandido*/
   input:checked ~ label {
-    background: lightgrey; 
+    background: rgba(211, 211, 211, 0); 
   }
   
   ul{
@@ -249,11 +250,11 @@ body {
   
   li {
     display: block;
-    background: lightgrey;
+    background: rgba(211, 211, 211, 0);
     margin: 0;
     padding: 10px;
     list-style: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(128, 128, 128, 0);
   }
   
   /*Estilo cuando el mouse pasa encima de cada link del menu*/
