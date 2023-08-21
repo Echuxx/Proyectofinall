@@ -60,7 +60,9 @@ position: fixed;
 body {
   font-family: 'Lato', sans-serif;
   background-image: url("https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=2000");
-  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Header */
