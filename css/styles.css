@@ -330,6 +330,17 @@ body {
   filter: invert(1); 
 }
 
+.boton-formulario {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+}
 
 
 
