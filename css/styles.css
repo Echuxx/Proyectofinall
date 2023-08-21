@@ -28,19 +28,39 @@ body {
 .menu-icon {
   display: none;
   cursor: pointer;
-  background-color: #3498db;
+  
 }
 
 /* Menu horizontal para pantallas grandes */
 .menu {
-  display:flow-root;
+  padding-top: 80px; /* Ajusta este valor según tus necesidades */
+  display: flex;
   align-items: center;
+  justify-content: space-between; /* Distribuir elementos horizontalmente */
+  background-color: #f8f9fa00;
 }
+
 .menu a {
-  color: rgb(250, 246, 246); /* Cambia "red" por el color que desees */
+  color: rgb(247, 244, 244); /* Cambia "red" por el color que desees */
 }
+
 .menu li {
-  margin-right: 20%;
+  margin: 0 10px; /* Agrega margen a los lados de cada elemento */
+  
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px; /* Ajusta el padding según tu diseño */
+  background-color: #f4f4f534; /* Color de fondo de los botones */
+  border-radius: 5px; /* Agrega bordes redondeados a los botones */
+  text-decoration: none;
+  color: white; /* Color del texto de los botones */
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo */
+}
+
+.menu li a:hover {
+  background-color: #3498db; /* Cambia el color de fondo al pasar el mouse */
 }
 
 /* Media query para mostrar el icono del menú en dispositivos móviles */
