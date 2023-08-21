@@ -74,6 +74,10 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
 
 /* Ajusta estos estilos según tus necesidades */
@@ -196,9 +200,10 @@ body {
 
 
   #titulo-footer {
-    line-height: 90px;
+    line-height: 90%;
     color: #fbfbfb;
     text-align: center;
+    font-size: 120%;
 }
 
 #footer {
