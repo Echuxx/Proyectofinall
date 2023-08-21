@@ -116,7 +116,8 @@ body {
   .contenedor {
     display: flex;
     align-items: center;
-    margin-top: 120px; 
+    
+    margin-top: 1%; 
   }
   
   .contenedor img {
@@ -125,11 +126,13 @@ body {
   
   .contenido {
     flex: 1;
-    padding: 30px; /* Espacio entre el contenido y la imagen */
+    text-justify:distribute;
+    padding: 5%; /* Espacio entre el contenido y la imagen */
   }
   
   .contenido h2 {
-    margin: 10px; /* Espacio inferior para el título */
+    margin: 10%; /* Espacio inferior para el título */
+    
   }
 
   /* Boton para descargar el cv */
@@ -194,6 +197,7 @@ body {
 }
 
 .logos {
+    padding-top: 10%;
     display:flexbox;
     text-align: center;
   }
