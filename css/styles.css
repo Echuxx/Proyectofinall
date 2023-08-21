@@ -1,82 +1,14 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Lato:wght@400;700&family=Lilita+One&display=swap');
-
-@keyframes escalar {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
-    list-style-type: none;
-}
-
-
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
-
-/* Ejemplo de media query para dispositivos móviles */
-@media (max-width: 768px) {
-  
-  
-}
-
-.dark-mode{
-  background-color: #0e0e0e;
-  transition:background-color .5s;
-}
-.dark-mode .card{
-  background-color: #1A1C1E;
-}
-.dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
-  color:white;
-}
-.dark-mode .btn-mode{
-  background-color:#1A1C1E;
-  border:1px solid white;
-  color:white;
-}
-
-
-main {
-    max-width: 1200px;
-    margin: auto;
-    
-    
-}
-
-
-
-#header {
-position: fixed;
-        
-    
-    
-}
-
-/* header */
-/* Estilos generales */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  scroll-behavior: smooth;
+  list-style-type: none;
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: rgba(109, 204, 191, 0.151);
+  background-color: rgba(21, 204, 180, 0.151);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -90,23 +22,23 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
-	left: 0; /* Posicionamos la cabecera al lado izquierdo */
-	top: 0; /* Posicionamos la cabecera pegada arriba */
-	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  width: 100%;
 }
 
-/* Ajusta estos estilos según tus necesidades */
 .menu-icon {
   display: none;
   cursor: pointer;
+  background-color: #3498db;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
+/* Menu horizontal para pantallas grandes */
+.menu {
+  display:flow-root;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 20%;
 }
 
 /* Media query para mostrar el icono del menú en dispositivos móviles */
@@ -114,25 +46,45 @@ body {
   .menu-icon {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 10%;
     right: 20px;
-    z-index: 1000;
+    z-index: 3;
   }
-  
-  .menu ul {
+
+  .menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 15%;
     right: 0;
     background-color: #2498f7e3;
     width: 100%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(243, 227, 227, 0.027);
+    z-index: 2;
+    padding: 0;
   }
 
-  .menu ul.active {
+  .menu.active {
     display: flex;
   }
+
+  .menu li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  /* Estilo del boton cuando se pasa el mouse por encima */
+  .menu li:hover {
+    background-color: rgba(211, 211, 211, 0.3);
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
 }
+
   /* primer texto */
   
   #fotomia {
@@ -243,7 +195,7 @@ body {
 
   /* menu hamburguesa */
   ul{
-    display: none;
+    display:none;
   }
   
   input:checked  ~ ul{
@@ -274,23 +226,22 @@ body {
   
   /* Estilo del boton cuando el menú está expandido*/
   input:checked ~ label {
-    background: rgba(211, 211, 211, 0); 
+    background: rgba(231, 12, 12, 0); 
   }
   
   ul{
-    margin-top:0;
-    padding: 0;
-    width: 200px;
+    margin-top:10%;
+    padding: 10%;
+    width: 10%;
   
   }
   
   
   li {
-    display: block;
+    display:grid;
     background: rgba(211, 211, 211, 0);
-    margin: 0;
-    padding: 10px;
-    list-style: none;
+    margin: 0%;
+    padding: -10px;
     border-bottom: 1px solid rgba(128, 128, 128, 0);
   }
   
@@ -304,8 +255,8 @@ body {
 
   .container-btn-mode{
     position: absolute;
-    top:20px;
-    right: 30px;
+    top: 5%;
+    right: 25%;
     cursor: pointer;
     z-index: 2;
     font-size:0;

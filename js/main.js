@@ -9,3 +9,10 @@ document.getElementById('id-sun').onclick = function(){
     document.getElementById('id-sun').classList.remove('active');
     this.classList.add('active');
   };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+      const ul = document.querySelector('.menu');
+      ul.classList.toggle('active');
+    });
+  });
