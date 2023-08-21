@@ -36,7 +36,9 @@ body {
   display:flow-root;
   align-items: center;
 }
-
+.menu a {
+  color: rgb(250, 246, 246); /* Cambia "red" por el color que desees */
+}
 .menu li {
   margin-right: 20%;
 }
@@ -55,7 +57,7 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 15%;
+    top: 16%;
     right: 0;
     background-color: #2498f7e3;
     width: 100%;
@@ -67,6 +69,9 @@ body {
 
   .menu.active {
     display: flex;
+    background-color: #2498f7e5;
+    align-items: center;
+    
   }
 
   .menu li {
@@ -93,7 +98,7 @@ body {
   }
   
   .contenedor {
-    padding-top: 35%;
+    padding-top: 0%;
     display: flex;
     align-items: center;
     
