@@ -55,11 +55,12 @@ position: fixed;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url("https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=2000");
+  background-color: rgba(109, 204, 191, 0.151);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -67,11 +68,12 @@ body {
 
 /* Header */
 .header {
-  background-image: url("https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.jpg?w=2000");
+  background-image: url("https://cdn.fairusage.org/photos/background-hd/large-blue-news-background-hd-wallpaper-page-wallpapers-pageblues-artists-blues-music-york-festival-windows-clues-newblue-blue-news-background-13659370.jpg");
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Ajusta estos estilos según tus necesidades */
@@ -115,6 +117,7 @@ body {
   
   #fotomia {
     border-radius: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .contenedor {
@@ -127,6 +130,7 @@ body {
   
   .contenedor img {
     max-width: 50%;
+    
   }
   
   .contenido {
@@ -166,6 +170,7 @@ body {
     border-radius: 10px;
     font-size: 120%;
     font-family: lato;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         
 }
 
@@ -206,6 +211,7 @@ body {
     padding-top: 10%;
     display:flexbox;
     text-align: center;
+   
   }
   
   .logos img {
