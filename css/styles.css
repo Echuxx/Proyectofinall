@@ -63,7 +63,7 @@ body {
 
 /* Header */
 .header {
-  background-color: #2498f7e3;
+  background-image: url("/img/header.jpg");
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -189,8 +189,7 @@ body {
 
 #footer {
     height: 90px;
-    
-    background-image: url("https://3.bp.blogspot.com/-ZGO_QXvzwao/VUjvs_4UCcI/AAAAAAAATqc/elKeY6bPx-8/s1600/ZenBG%2B(1).png");
+    background: #3498db;
 
 }
 
