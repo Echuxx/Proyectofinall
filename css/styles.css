@@ -8,10 +8,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: rgba(21, 204, 180, 0.151);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #99d4d68e;
 }
 
 /* Header */
@@ -77,8 +74,8 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 16%;
-    right: 0;
+    top: 100px;
+    right: 0%;
     background-color: #2498f7e3;
     width: 100%;
     border-radius: 0 0 10px 10px;
@@ -118,45 +115,35 @@ body {
   }
   
   .contenedor {
-    padding-top: 0%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
-    
-    margin-top: 1%; 
-  }
-  
-  .contenedor img {
-    max-width: 50%;
-    
+    justify-content: center;
+    height: 100vh; /* Asegura que el contenedor ocupe el 100% del viewport height */
+    text-align: center;
+    padding: 0 10%; /* Ajusta el espacio alrededor del contenido */
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total del contenedor */
   }
   
   .contenido {
-    flex: 1;
-    font-size: 100%;
-    text-justify:distribute;
-    padding: 5%; /* Espacio entre el contenido y la imagen */
+    font-size: 180%; /* Ajusta el tamaño del texto según tus preferencias */
   }
   
-  .contenido h2 {
-    margin: 10%; /* Espacio inferior para el título */
-    
+  .logos {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 0px; /* Ajusta el margen superior según tus preferencias */
   }
-
-  /* Boton para descargar el cv */
-
-
-.btn-cv {
+  
+  .logos a {
+    display: inline-block; /* Para que los enlaces no ocupen todo el ancho */
+    margin: 0 10px; /* Ajusta el margen horizontal entre los logos */
+  }
+  
+  .logos a img {
+    max-height: 900px; /* Ajusta el tamaño máximo de las imágenes */
+  }
     
-    font-size: 20px;
-     
-     
-     
-    color: #fbfbfb; 
-    text-decoration:double; 
-    
-    
-}
 
 #hablemos {
     display: flexbox;
@@ -281,9 +268,9 @@ body {
   .container-btn-mode{
     position: absolute;
     top: 5%;
-    right: 25%;
+    right: 2%;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
     font-size:0;
   }
   .btn-mode{
